@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "845192603248",
+    "firebase_url": "https://submission4-60566.firebaseio.com",
+    "project_id": "submission4-60566",
+    "storage_bucket": "submission4-60566.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845192603248:android:4cc7977e8361f00664f6b5",
+        "android_client_info": {
+          "package_name": "com.baytech.submission4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "845192603248-m79ngcvchnlm6p0r1fdrq8j0uo5d8bk3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.baytech.submission4",
+            "certificate_hash": "1f411d5c6455a58aae9b47de0df7899ea73f085b"
+          }
+        },
+        {
+          "client_id": "845192603248-1tf3igk8fp2ac4svg1ifs47pmkoi41jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsEFTNyI-dCuSqL5Hdn73GDobqpRXsiH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "845192603248-1tf3igk8fp2ac4svg1ifs47pmkoi41jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

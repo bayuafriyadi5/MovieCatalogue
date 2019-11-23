@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baytech.submission5">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <permission android:name="com.baytech.submission5.READ_DATABASE" android:protectionLevel="normal" />
+    <permission android:name="com.baytech.submission5.WRITE_DATABASE" android:protectionLevel="normal" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.baytech.submission5.Activity.SettingsActivity" />
+        <activity android:name="com.baytech.submission5.Activity.SearchActivity" />
+        <activity android:name="com.baytech.submission5.Activity.DetailTvFavActivity" />
+        <activity android:name="com.baytech.submission5.Activity.DetailMovieFavActivity" />
+        <activity android:name="com.baytech.submission5.Activity.FavoriteActivity" />
+        <activity android:name="com.baytech.submission5.Activity.DetailTvActivity" />
+        <activity android:name="com.baytech.submission5.Activity.DetailMovieActivity" />
+        <activity
+            android:name="com.baytech.submission5.Activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".Provider.FavoriteProvider"
+            android:authorities="com.baytech.submission5"
+            android:exported="true"
+            android:readPermission="com.baytech.submission5.READ_DATABASE"
+            android:writePermission="com.baytech.submission5.WRITE_DATABASE" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name="com.baytech.submission5.StackWidget.ImageBannerWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name="com.baytech.submission5.Service.DailyReminderMovie"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="com.baytech.submission5.Service.ReleaseTodayReminderMovie"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="com.baytech.submission5.StackWidget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+</manifest>

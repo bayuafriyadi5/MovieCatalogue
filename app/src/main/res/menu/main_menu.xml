@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/title_home"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_favorite"
+        android:title="@string/title_favorite"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_change_settings"
+        android:title="@string/change_settings"
+        app:showAsAction="never"/>
+</menu>

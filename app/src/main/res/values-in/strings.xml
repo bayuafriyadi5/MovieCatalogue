@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Submission5</string>
+    <string name="title_home">Beranda</string>
+    <string name="overview">Sinopsis</string>
+    <string name="title">Judul:</string>
+    <string name="rating">Rating:</string>
+    <string name="year">Tahun:</string>
+
+    <string name="change_settings">Ganti Pengaturan</string>
+    <string name="title_favorite">Favorit</string>
+
+    <string name="tv_setting_notification">Notifikasi</string>
+    <string name="tv_setting_daily_reminder_notification">Notifikasi Pengingat Harian</string>
+    <string name="tv_setting_turn_on_off_daily_reminder">Nyalakan/Matikan Pengingat Harian</string>
+    <string name="tv_setting_upcoming_reminder_notification">Upcoming Notifikasi Pengingat</string>
+    <string name="tv_setting_turn_on_off_upcoming_reminder">Nyalakan/Matikan Pengingat Upcoming</string>
+    <string name="tv_setting_settings">Pengaturan</string>
+    <string name="tv_setting_locale">Pengaturan Lokalisasi</string>
+    <string name="tv_setting_change_your_phone_localization">Ganti Lokalisasi Handphonemu</string>
+    <string name="message_setup_upcoming">Upcoming Task di buat</string>
+    <string name="message_cancel_upcoming">Upcoming Task di batalkan</string>
+    <string name="message_notif_daily">Kamana Wae Atuh Euy&#8230;</string>
+    <string name="Release_movie">Film baru telah rilis</string>
+    <string name="Release_movie_content"> telah rilis hari ini, silahkan untuk melihatnya</string>
+
+
+    <string name="notif_question_delete">Anda Yakin?</string>
+    <string name="yes">ya</string>
+    <string name="no">tidak</string>
+    <string name="appwidget_text">Widget Anjay</string>
+    <string name="empty_text">Kosong</string>
+</resources>
